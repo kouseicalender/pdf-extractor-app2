@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF名言整形表示ツール</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PDF.js ライブラリ（CDN） -->
+  <script src="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>PDF名言整形表示ツール</h1>
+
+  <label for="pdf-upload">PDFファイルを選択:</label>
+  <input type="file" id="pdf-upload" accept="application/pdf" title="PDFファイルを選択してください">
+
+  <!-- 抽出結果の出力先 -->
+  <div id="output" style="margin-top: 2em;"></div>
+</body>
+</html>
